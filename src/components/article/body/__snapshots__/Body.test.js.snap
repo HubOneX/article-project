@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Body should match the snapshot with correctly provided array of html elements 1`] = `
+<div
+  className="article-body"
+>
+  <div
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "<h2>This is a sub-heading</h2>",
+      }
+    }
+  />
+  <div
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "<p>This is a paragraph!</p>",
+      }
+    }
+  />
+</div>
+`;

@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should match the snapshot when article has all values 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="article-wrapper"
+  >
+    <img
+      alt="main image"
+      className="article-image"
+      src="https://content-eu-4.content-cms.com/api/859f2008-a40a-4b92-afd0-24bb44d10124/url"
+    />
+    <div
+      className="article-header"
+    >
+      <div
+        className="article-info"
+      >
+        <p
+          className="article-author"
+        >
+          Stephen King
+        </p>
+        <p
+          className="article-date"
+        >
+          07:27 Sep 3, 2020
+        </p>
+      </div>
+      <hr />
+      <h1
+        className="article-title"
+      >
+        The horror of tests
+      </h1>
+    </div>
+    <div
+      className="article-body"
+    >
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<h2>Secondary heading</h2>",
+          }
+        }
+      />
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<p>The paragraph below!</p>",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`App should match the snapshot when article has only empty strings 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="article-wrapper"
+  >
+    <div
+      className="article-header"
+    >
+      <div
+        className="article-info"
+      >
+        <p
+          className="article-author"
+        >
+          Anonymous
+        </p>
+        <p
+          className="article-date"
+        >
+          -
+        </p>
+      </div>
+      <hr />
+      <h1
+        className="article-title"
+      />
+    </div>
+    <p
+      className="not-loaded-info"
+    >
+      Sorry, we couldn't load this article. Please try again later.
+    </p>
+  </div>
+</div>
+`;

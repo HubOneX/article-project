@@ -1,0 +1,16 @@
+.article-header {
+  padding: 0px 30px;
+
+  & .article-title {
+    margin: 5px 0 15px;
+    font-size: 32px;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 0px 20px;
+
+    & .article-title {
+      font-size: 25px;
+    }
+  }
+}

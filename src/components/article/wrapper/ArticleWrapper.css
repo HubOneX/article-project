@@ -1,0 +1,24 @@
+.article-wrapper {
+  margin: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: hsla(0, 0%, 75%, 0.11);
+  border: 1px solid hsla(0, 0%, 75%, 0.25);
+  border-radius: 20px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  max-width: 940px;
+
+  & .article-image {
+    max-width: 940px;
+  }
+
+  @media screen and (max-width: 960px) {
+    max-width: 940px;
+
+    .article-image {
+      max-width: 90vw;
+    }
+  }
+}
