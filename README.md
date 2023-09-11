@@ -1,4 +1,4 @@
-## article-project
+# article-project
 
 A small project to showcase my basic JS + React skills
 
