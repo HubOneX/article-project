@@ -1,0 +1,26 @@
+.article-body {
+  padding: 0 30px 30px;
+  margin: 0;
+
+  & h2 {
+    font-size: 26px;
+    margin: 5px 0;
+  }
+
+  & p {
+    font-size: 22px;
+    text-align: justify;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 0 20px 20px;
+
+    & h2 {
+      font-size: 22px;
+    }
+
+    & p {
+      font-size: 18px;
+    }
+  }
+}

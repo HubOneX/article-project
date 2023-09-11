@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Article from "./components/article/Article";
+import Loader from "./components/loader/Loader";
+import { useGetArticleById } from "./hooks/useGetArticleById/useGetArticleById";
+import { useEffect, useState } from "react";
+import objectUtils from "./utils/objectUtils";
+
+const givenId = "db4930e9-7504-4d9d-ae6c-33facca754d1";
 
 function App() {
+  const { article, isError } = useGetArticleById(givenId);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    if (article && objectUtils.isEmptyObject(article) && !isError) {
+      setIsLoading(true);
+      return;
+    }
+
+    if (isError || article) {
+      setIsLoading(false);
+    }
+  }, [article, isError]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {isLoading ? <Loader /> : <Article article={article} isError={isError} />}
     </div>
   );
 }

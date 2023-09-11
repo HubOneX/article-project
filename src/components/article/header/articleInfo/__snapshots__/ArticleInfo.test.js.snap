@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleInfo should match the snapshot 1`] = `
+<div
+  className="article-info"
+>
+  <p
+    className="article-author"
+  >
+    Author
+  </p>
+  <p
+    className="article-date"
+  >
+    07:27 Sep 3, 2020
+  </p>
+</div>
+`;
